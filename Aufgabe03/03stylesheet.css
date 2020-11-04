@@ -1,14 +1,12 @@
 header {
-background-color:darkred;
-height: 400px;
-width: 800px;
--webkit-border-radius: 0px 500px 500px 500px;
--moz-border-radius: 0px 500px 500px 500px;
-border-radius: 0px 0px 700px 700px;
-display: block; 
+    background-color:rgb(161, 83, 31);
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    display: block; 
     margin-right: auto; 
     margin-left: auto;
-    margin-top:-20px;
+    margin-top:-400px;
 }
 
 li {
@@ -126,7 +124,7 @@ h4 {
 }
 
 .Absenden {
-    color: white;
+    color: rgb(105, 105, 105);
     background: lightgrey;
     font-size:15pt;
     margin-left: 200px;
@@ -145,40 +143,41 @@ p {
 }
 
 .textkreis {
+    text-transform: uppercase;
     color: rgb(245, 232, 220);
     font-size: 120px;
     font-family:Helvetica, sans-serif;
-    font-style: italic;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    letter-spacing: 15px
 
 }
 
 .textkreis1 {
     color: rgb(245, 232, 220);
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+    font-family: Helvetica, sans-serif;
     line-height: 50%;
     margin-top: 0px;
     margin-bottom: 0px;
+    letter-spacing: 10px;
 }
 
 .textkreis2 {
     color: rgb(245, 232, 220);
-    font-size: 70px;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
     margin-top: 50px;
     margin-bottom: 0px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
-.textkreis3 {
+.textkreis3 { /*welches war das nochmal*/
     color: rgb(245, 232, 220);
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -203,12 +202,9 @@ display: block;
 }
 
 .instagram {
+    padding-top: 20px;
     margin-left: auto;
-    margin-right: auto;
-    position:relative;
-    bottom: 0px;
-    width:50px;
-    height:50px; 
+    margin-right: auto; 
 }
 
 .cf {
