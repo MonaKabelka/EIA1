@@ -11,14 +11,13 @@
 <body>
 
     <header>
-		<nav class="navbar"> <!--Navigationsleiste-->
-			<ul>
-			
-				<li><a class="button" href="03Portfolio.html"> Portfolio </a></li> 
-				<li><a class="button" href="03AboutMe.html"> About </a></li>
-				<li><a class="button" href="03ContactMe.html"> Contact </a></li>
-			</ul>   
-		</nav>
+        <nav class="navbar"> <!--Navigationsleiste-->
+            <ul class="navbarlist">
+                <li class="active"> <a  href="03Portfolio.html"> portfolio </a></li>
+                <li><a  href="03AboutMe.html"> about </a></li>
+                <li><a  href="03ContactMe.html"> contact </a></li>
+            </ul>   
+        </nav>
 
 	<div class="circle"> <!--Halbkreis-->
 			<div class="circletext"> <!--Text im Halbkreis-->
@@ -39,7 +38,10 @@
     </header>
     
     <main>
-    <form class="cf"> <!--form anshauen-->
+
+    <p>contact</p>
+
+    <form class="contactformular">
         <div>
             <input class="Formular" placeholder="ggf. Firma"> <br>
             <input class="Formular" placeholder="Name*"> <br>
@@ -51,7 +53,7 @@
         </div>
         
         <textarea name="message" class="Nachricht"  placeholder="Nachricht"></textarea>
-        <p class="Datenschutz">Mit Absenden der Nachricht bestätigen Sie die allgemeinen <u>AGB</u> und die <u>Datenschutz-Richtlinien</u> </p><br>
+        <p class="Datenschutz">Mit Absenden der Nachricht bestätigen Sie die allgemeinen <u>AGB</u> und die <u>Datenschutz-Richtlinien</u>. </p><br>
         <input class="Absenden" type="submit" value="Absenden">
     </main>
 

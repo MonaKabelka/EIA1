@@ -37,21 +37,27 @@ body{
 
 .icons {
     padding-top: 20px;
-    text-align: center
+    text-align: center;
+    display: flex;
+    padding-left: 350px;
+}
+
+.icons a {
+    padding: 10px
 }
 
 /*Navigationsleiste*/
 .navbar {
     position: fixed;
     top: 0;
-    right: 0%;
-    background: rgb(0, 0, 0);
+    right: 30px;
 }
 
 .navbarlist {
     display: flex;
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 .navbar .active {
@@ -69,14 +75,15 @@ body{
 
 .navbarlist li {
     list-style: none;
-    letter-spacing: 8px;
+    letter-spacing: 10px;
 }
 
 .navbarlist a:hover{
     color: rgb(161, 81, 31);
+    font-size: 20px;
 }
 
-/*Inhalt*/
+/*Inhalt Portfolio*/
 .content {
     margin-top: 110px;
     text-align: center;
@@ -88,6 +95,18 @@ body{
 
 .multimedia {
     text-align: center
+}
+
+/*Kontaktformular*/
+
+.Formular {
+    color: white;
+    background: lightgrey;
+    font-size:15pt;
+    width: 200px;
+    padding: 5px, 5px, 5px, 5px;
+    margin-left: 200px;
+    text-align: left;
 }
 
 /*ab hier nicht mein Code
