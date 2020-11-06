@@ -13,9 +13,9 @@
     <header>
         <nav class="navbar"> <!--Navigationsleiste-->
             <ul class="navbarlist">
-                <li class="active"> <a  href="03Portfolio.html"> portfolio </a></li>
+                <li> <a  href="03Portfolio.html"> portfolio </a></li>
                 <li><a  href="03AboutMe.html"> about </a></li>
-                <li><a  href="03ContactMe.html"> contact </a></li>
+                <li class="active"><a  href="03ContactMe.html"> contact </a></li>
             </ul>   
         </nav>
 
@@ -39,9 +39,11 @@
     
     <main>
 
-    <p>contact</p>
+    <div class="contactformular">
 
-    <form class="contactformular">
+        <p><b>contact</b></p>
+    
+        <form>
         <div>
             <input class="Formular" placeholder="ggf. Firma"> <br>
             <input class="Formular" placeholder="Name*"> <br>
@@ -51,10 +53,17 @@
             <input class="Formular" placeholder="Postleitzahl*"><br>
             <input class="Formular" placeholder="Bundesland"><br>
         </div>
-        
-        <textarea name="message" class="Nachricht"  placeholder="Nachricht"></textarea>
-        <p class="Datenschutz">Mit Absenden der Nachricht bestätigen Sie die allgemeinen <u>AGB</u> und die <u>Datenschutz-Richtlinien</u>. </p><br>
-        <input class="Absenden" type="submit" value="Absenden">
+    </div>  
+
+    <textarea  placeholder="Nachricht"></textarea>
+
+    <p class="datenschutz">Mit Absenden der Nachricht bestätigen Sie die allgemeinen <u>AGB</u> und die <u>Datenschutz-Richtlinien</u>. <br>
+    Mit * markierte Felder sind Pflichtfelder. </p><br>
+
+
+    <input class="button" type="submit" value="Absenden">
+
+
     </main>
 
 </body>
