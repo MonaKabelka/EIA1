@@ -36,14 +36,12 @@ body{
 }
 
 .icons {
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
-    display: flex;
-    padding-left: 350px;
 }
 
-.icons a {
-    padding: 10px;
+.icons:hover{ 
+    transform: translateY(-10px);
 }
 
 /*Navigationsleiste*/
@@ -109,7 +107,6 @@ body{
 }
 
 /*Kontaktformular*/
-
 .contactformular {
     margin-top: 110px;
 }
@@ -166,201 +163,3 @@ textarea {
     font-family: sans-serif;
     letter-spacing: 3px;
 }
-
-/*ab hier nicht mein Code
-li {
-    list-style: none;
-    text-align: right;
-    float: right;
-    font-size: 20px;      
-}
-
-a {
-    color: white;  
-    text-decoration: none;
-    display: block;
-    padding: 2px;
-    border: 10px;
-}
-
-
-
-
-.active {
-    color: darkred;
-}
-
-.button {
-    transition-duration:0.4s;
-    color: white; 
-    background:black; 
-    text-decoration: none;
-    display: block;
-    padding: 2px;
-    border: 10px;
-}
-
-.button:hover {
-    background-color: black;
-    padding: 5px;
-    color:darkred;
-}
-
-h1 {
-font-family: sans-serif;
-color:darkred;
-padding: 0px;
-margin-left: 230px;
-position: sticky;
-left: 50%;
-font-size: 40px;
-}
-
-h2 {
-    font-family: sans-serif;
-    color:darkred;
-    padding: 0px;
-    margin-left: 315px;
-    position: sticky;
-    left: 50%;
-    font-size: 40px;
-}  
-
-
-.kontakt {
-    text-align:left;
-}
-
-.about {
-    text-align:center;
-    margin-top: 10px;
-}
-
-h4 {
-    color: white;
-    background: lightgrey;
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-}
-
-.Kontakt {
-    color: darkred;
-    position:relative;
-    text-align:left;
-    margin-top: -700px;
-    margin-left: 200px;
-}
-
-.Formular {
-    color: white;
-    background: lightgrey;
-    font-size:15pt;
-    width: 200px;
-    padding: 5px, 5px, 5px, 5px;
-    margin-left: 200px;
-    text-align: left;
-}
-
-.Nachricht {
-    color: white;
-    background: lightgrey;
-    font-size:15pt;
-    width: 200px;
-    padding: 20px, 80px, 5px, 5px;
-    margin-left: 200px;
-    text-align: left;
-}
-
-.Datenschutz {
-    color: lightgrey;
-    font-size:15pt;
-    margin-left: 200px;
-    text-align: left;
-    position: relative;
-}
-
-.Absenden {
-    color: rgb(105, 105, 105);
-    background: lightgrey;
-    font-size:15pt;
-    margin-left: 200px;
-    padding: 5px, 5px, 5px, 5px;
-    width: 100px;
-}
-
-style{
-    color:white;
-}
-
-/*p {
-    text-align: center;   
-    font-size: 15pt; 
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.textkreis {
-    text-transform: uppercase;
-    color: rgb(245, 232, 220);
-    font-size: 120px;
-    font-family:Helvetica, sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    letter-spacing: 15px
-
-}
-
-.textkreis1 {
-    color: rgb(245, 232, 220);
-    font-size: 30px;
-    font-family: Helvetica, sans-serif;
-    line-height: 50%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    letter-spacing: 10px;
-}
-
-.textkreis2 {
-    color: rgb(245, 232, 220);
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-}
-
-.textkreis3 {
-    color: rgb(245, 232, 220);
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-body{ 
-    background-image: url("Images/bg.png");
-    background-repeat: repeat;
-    width: 100%;
-    background-color:#ffffff;
-}
-
-img { 
-    display: block; 
-    margin-right: auto; 
-    margin-left: auto;
-}
-
-video {
-display: block; 
-    margin-right: auto; 
-    margin-left: auto; 
-}
-
-
-.cf {
-    color:white;
-    margin-top: 100px;
-}
-*/
