@@ -11,3 +11,15 @@ section {
     justify-content: center;
     margin-top: 10%
 }
+
+.busch {
+    position: absolute;
+    top: -60px;
+    left: 900px;
+}
+
+.pinguin {
+    position: absolute;
+    right: 950px;
+    top: 220px;
+}
