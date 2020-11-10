@@ -1,0 +1,42 @@
+/*Für Bildschirmauflösung 2560 x 1440*/
+body {
+    background-image: url(assets/bg.png);
+}
+
+section {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%
+}
+
+.busch {
+    position: absolute;
+    top: -60px;
+    left: 28%;
+}
+
+.pinguin {
+    position: absolute;
+    right: 45%;
+    top: 220px;
+}
+
+.container .headline {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    right: 500px;
+    top: 100px;
+}
+
+.container .text {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    right: 550px;
+    top: 150px;
+}
