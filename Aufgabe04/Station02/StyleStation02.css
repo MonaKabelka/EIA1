@@ -1,42 +1,45 @@
-/*Für Bildschirmauflösung 2560 x 1440*/
+/*Allgemein*/
 body {
-    background-image: url(assets/bg.png);
-}
-
-section {
-    position: relative;
-}
-
-.container {
+    background-image: url(images/bg1.png);
+    height: 750px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 10%
 }
 
-.busch {
+/*Kartenhintergrund*/
+.wrapper {
+    display: block;
+    position: relative;
+}
+
+/*Png-Dateien*/
+.images {
     position: absolute;
-    top: -60px;
-    left: 28%;
 }
 
-.pinguin {
+.snowflake {
     position: absolute;
-    right: 45%;
-    top: 220px;
+    top: -470px;
+    left: -50px;
 }
 
-.container .headline {
+.snowman {
+    position: absolute;
+    top: -180px;
+    left: 450px;
+}
+
+/*Textinhalt*/
+.text {
+    color: white;
+    position: absolute;
+    top: 0;
+    padding:80px 50px 75px;
+    width: 450px;
+    margin: 30px 0px;
+}
+
+.text .headline {
     font-size: 30px;
-    color: white;
-    position: relative;
-    right: 500px;
-    top: 100px;
-}
-
-.container .text {
-    font-size: 20px;
-    color: white;
-    position: relative;
-    right: 550px;
-    top: 150px;
 }
