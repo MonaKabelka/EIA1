@@ -1,0 +1,65 @@
+/*Allgemein*/
+body {
+    background-image: url(images/bg.png);
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Kartenhintergrund*/
+.wrapper {
+    display: block;
+    position: relative;
+}
+
+/*Sterne Position*/
+.stars {
+    position: absolute;
+    z-index: 1;
+}
+
+.star1 {
+    position: absolute;
+    top: -375px;
+    left: 30px;
+}
+
+.star2 {
+    position: absolute;
+    top: -180px;
+    left: 450px;
+}
+
+.star3 {
+    position: absolute;
+    top: -120px;
+    left: 350px;;
+}
+
+.star4 {
+    position: absolute;
+    top: -135px;
+    left: 230px;
+}
+
+/*Hover*/
+
+.star1:hover, .star2:hover,
+.star3:hover, .star4:hover{
+    background-image: url(images/stern_hover.png);
+}
+
+/*Textinhalt*/
+.text {
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 50px 50px;
+    width: 450px;
+    margin: 30px 0px;
+}
+
+.text .headline {
+    font-size: 30px;
+}
