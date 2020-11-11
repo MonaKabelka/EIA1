@@ -16,31 +16,25 @@ body {
 /*Sterne Position*/
 .stars {
     position: absolute;
+    top: 0px;
+    left: 0px;
     z-index: 1;
 }
 
 .star1 {
     position: absolute;
-    top: -375px;
-    left: 30px;
 }
 
 .star2 {
     position: absolute;
-    top: -180px;
-    left: 450px;
 }
 
 .star3 {
     position: absolute;
-    top: -120px;
-    left: 350px;;
 }
 
 .star4 {
     position: absolute;
-    top: -135px;
-    left: 230px;
 }
 
 /*Hover*/

@@ -15,18 +15,20 @@ body {
 /*Png-Dateien*/
 .images {
     position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .busch {
     position: absolute;
-    top: -470px;
-    left: -50px;
+    top: -65px;
+    left: -65px;
 }
 
 .pinguin {
     position: absolute;
-    top: -180px;
-    left: 450px;
+    bottom: -30px;
+    right: -30px;
 }
 
 /*Textinhalt*/
