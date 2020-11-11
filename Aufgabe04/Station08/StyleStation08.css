@@ -1,0 +1,34 @@
+/*Allgemein*/
+body {
+    background-image: url(images/bg.png);
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Kartenhintergrund*/
+.wrapper {
+    display: block;
+    position: relative;
+}
+
+/*Banderole*/
+.banderole {
+    position: absolute;
+    top: 277px;
+    left: 370px;
+    z-index: 1;
+}
+
+/*Textinhalt*/
+.video {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.youtubevideo {
+    width: 550px;
+    height: 350px;
+}
