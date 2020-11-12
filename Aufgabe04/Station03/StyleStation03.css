@@ -9,7 +9,6 @@ body {
 
 /*Kartenhintergrund*/
 .wrapper {
-    display: block;
     position: relative;
 }
 
@@ -23,18 +22,26 @@ body {
 
 .star1 {
     position: absolute;
+    top: 25px;
+    left: 50px;
 }
 
 .star2 {
     position: absolute;
+    top: 280px;
+    left: 200px;
 }
 
 .star3 {
     position: absolute;
+    top: 300px;
+    left: 320px;
 }
 
 .star4 {
     position: absolute;
+    top: 250px;
+    left: 430px;
 }
 
 /*Hover*/

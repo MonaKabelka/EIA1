@@ -9,7 +9,6 @@ body {
 
 /*Kartenhintergrund*/
 .wrapper {
-    display: block;
     position: relative;
 }
 
@@ -22,20 +21,23 @@ body {
 
 .snowflake {
     position: absolute;
+    top: -65px;
+    left: -50px;
 }
 
 .snowman {
     position: absolute;
+    top: 210px;
+    left: 440px;
 }
 
 /*Textinhalt*/
 .text {
     color: white;
     position: absolute;
-    top: 0;
+    top: 30px;
     padding:80px 50px 75px;
     width: 450px;
-    margin: 30px 0px;
 }
 
 .text .headline {

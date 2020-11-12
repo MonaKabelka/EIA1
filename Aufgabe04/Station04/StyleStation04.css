@@ -9,7 +9,6 @@ body {
 
 /*Kartenhintergrund*/
 .wrapper {
-    display: block;
     position: relative;
 }
 

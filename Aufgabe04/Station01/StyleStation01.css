@@ -10,6 +10,8 @@ body {
 /*Kartenhintergrund*/
 .wrapper {
     position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 /*Png-Dateien*/
@@ -27,8 +29,8 @@ body {
 
 .pinguin {
     position: absolute;
-    bottom: -30px;
-    right: -30px;
+    top: 210px;
+    left: 460px;
 }
 
 /*Textinhalt*/
