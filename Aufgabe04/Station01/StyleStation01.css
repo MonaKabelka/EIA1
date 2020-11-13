@@ -1,7 +1,7 @@
 /*Allgemein*/
-body {
+html, body {
     background-image: url(images/bg.png);
-    height: 750px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,8 +10,6 @@ body {
 /*Kartenhintergrund*/
 .wrapper {
     position: relative;
-    top: 0px;
-    left: 0px;
 }
 
 /*Png-Dateien*/
