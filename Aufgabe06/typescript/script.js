@@ -49,7 +49,7 @@ var Aufgabe06;
     //HTML DOM Manipulation 
     //Europa
     function europe() {
-        document.querySelector(".titleRegion").innerHTML = "Europe"; //trotz id mit Punkt drauf zugreifen?
+        document.querySelector(".titleRegion").innerHTML = "Europe"; //greift nicht auf alle class titleRegion elemente zu?
         document.querySelector(".absoluteEmission").innerHTML = europe2018 + "kg CO2"; //wenn kg co2 weg ist ist da ein Fehler, wieso?
         document.querySelector(".relativeEmission").innerHTML = totalEurope.toFixed(1) + "%";
         document.querySelector(".growthEmission").innerHTML = PcomparisonEurope.toFixed(1) + "%";
