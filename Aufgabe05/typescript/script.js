@@ -22,27 +22,27 @@ var australia2018 = 2100.5;
 var gesamt = europe2018 + northamerica2018 + southamerica2018 + africa2018 + asia2018 + australia2018;
 // Europa
 var totalEurope = (100 / (gesamt / europe2018));
-var PcomparisonEurope = (100 / (europe2018 / europe2008));
+var PcomparisonEurope = (((europe2018 / europe2008) - 1) * 100);
 var compEurope = (europe2018 - europe2008);
 //Nordamerika
 var totalNorthamerica = (100 / (gesamt / northamerica2018));
-var PcomparisonNorthamerica = (100 / (northamerica2018 / northamerica2008));
+var PcomparisonNorthamerica = (((northamerica2018 / northamerica2008) - 1) * 100);
 var compNorthamerica = (northamerica2018 - northamerica2008);
 //Südamerika
 var totalSouthamerica = (100 / (gesamt / southamerica2018));
-var PcomparisonSouthamerica = (100 / (southamerica2018 / southamerica2008));
+var PcomparisonSouthamerica = (((southamerica2018 / southamerica2008) - 1) * 100);
 var compSouthamerica = (southamerica2018 - southamerica2008);
 //Afrika
 var totalAfrica = (100 / (gesamt / africa2018));
-var PcomparisonAfrica = (100 / (africa2018 / africa2008));
+var PcomparisonAfrica = (((africa2018 / africa2008) - 1) * 100);
 var compAfrica = (africa2018 - africa2008);
 //Asien
 var totalAsia = (100 / (gesamt / asia2018));
-var PcomparisonAsia = (100 / (asia2018 / asia2008));
+var PcomparisonAsia = (((asia2018 / asia2008) - 1) * 100);
 var compAsia = (asia2018 - asia2008);
 //Australien
 var totalAustralia = (100 / (gesamt / australia2018));
-var PcomparisonAustralia = (100 / (australia2018 / australia2008));
+var PcomparisonAustralia = (((australia2018 / australia2008) - 1) * 100);
 var compAustralia = (australia2018 - australia2008);
 // Konsolenausgabe
 //Europa

@@ -30,32 +30,32 @@ const gesamt: number = europe2018 + northamerica2018 + southamerica2018 + africa
 
 // Europa
 const totalEurope: number = (100 / (gesamt / europe2018));
-const PcomparisonEurope: number = (100 / (europe2018 / europe2008));
+const PcomparisonEurope: number = (((europe2018 / europe2008)-1) * 100);
 const compEurope: number = (europe2018 - europe2008);
 
 //Nordamerika
 const totalNorthamerica: number = (100 / (gesamt / northamerica2018));
-const PcomparisonNorthamerica: number = (100 / (northamerica2018 / northamerica2008));
+const PcomparisonNorthamerica: number = (((northamerica2018 / northamerica2008)-1) * 100);
 const compNorthamerica: number = (northamerica2018 - northamerica2008);
 
 //Südamerika
 const totalSouthamerica: number = (100 / (gesamt / southamerica2018));
-const PcomparisonSouthamerica: number = (100 / (southamerica2018 / southamerica2008));
+const PcomparisonSouthamerica: number = (((southamerica2018 / southamerica2008)-1) * 100);
 const compSouthamerica: number = (southamerica2018 - southamerica2008);
 
 //Afrika
 const totalAfrica: number = (100 / (gesamt / africa2018));
-const PcomparisonAfrica: number = (100 / (africa2018 / africa2008));
+const PcomparisonAfrica: number = (((africa2018 / africa2008)-1) * 100);
 const compAfrica: number = (africa2018 - africa2008);
 
 //Asien
 const totalAsia: number = (100 / (gesamt / asia2018));
-const PcomparisonAsia: number = (100 / (asia2018 / asia2008));
+const PcomparisonAsia: number = (((asia2018 / asia2008)-1) * 100);
 const compAsia: number = (asia2018 - asia2008);
 
 //Australien
 const totalAustralia: number = (100 / (gesamt / australia2018));
-const PcomparisonAustralia: number = (100 / (australia2018 / australia2008));
+const PcomparisonAustralia: number = (((australia2018 / australia2008)-1) * 100);
 const compAustralia: number = (australia2018 - australia2008);
 
 // Konsolenausgabe
