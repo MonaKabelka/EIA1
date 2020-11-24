@@ -1,63 +1,63 @@
 namespace Aufgabe06 {
     //Emissionswerte zuweisen
     //Europa
-    let europe2008: number = 4965.7;
-    let europe2018: number = 4209.3;
+    const europe2008: number = 4965.7;
+    const europe2018: number = 4209.3;
 
     //Nordamerika
-    let northamerica2008: number = 6600.4;
-    let northamerica2018: number = 6036.6;
+    const northamerica2008: number = 6600.4;
+    const northamerica2018: number = 6036.6;
 
     //Südamerika
-    let southamerica2008: number = 1132.6;
-    let southamerica2018: number = 1261.5;
+    const southamerica2008: number = 1132.6;
+    const southamerica2018: number = 1261.5;
 
     //Afrika
-    let africa2008: number = 1028;
-    let africa2018: number = 1235.5;
+    const africa2008: number = 1028;
+    const africa2018: number = 1235.5;
 
     //Asien
-    let asia2008: number = 12954.7;
-    let asia2018: number = 16274.1;
+    const asia2008: number = 12954.7;
+    const asia2018: number = 16274.1;
 
     //Australien
-    let australia2008: number = 1993;
-    let australia2018: number = 2100.5;
+    const australia2008: number = 1993;
+    const australia2018: number = 2100.5;
 
 
     // Augelagerte Berechnung
     //Gesamtemission
-    let gesamt: number = europe2018 + northamerica2018 + southamerica2018 + africa2018 + asia2018 + australia2018;
+    const gesamt: number = europe2018 + northamerica2018 + southamerica2018 + africa2018 + asia2018 + australia2018;
 
     // Europa
-    let totalEurope: number = (100 / (gesamt / europe2018));
-    let PcomparisonEurope: number = (((europe2018 / europe2008) - 1) * 100);
-    let compEurope: number = (europe2018 - europe2008);
+    const totalEurope: number = (100 / (gesamt / europe2018));
+    const PcomparisonEurope: number = (((europe2018 / europe2008) - 1) * 100);
+    const compEurope: number = (europe2018 - europe2008);
 
     //Nordamerika
-    let totalNorthamerica: number = (100 / (gesamt / northamerica2018));
-    let PcomparisonNorthamerica: number = (((northamerica2018 / northamerica2008) - 1) * 100);
-    let compNorthamerica: number = (northamerica2018 - northamerica2008);
+    const totalNorthamerica: number = (100 / (gesamt / northamerica2018));
+    const PcomparisonNorthamerica: number = (((northamerica2018 / northamerica2008) - 1) * 100);
+    const compNorthamerica: number = (northamerica2018 - northamerica2008);
 
     //Südamerika
-    let totalSouthamerica: number = (100 / (gesamt / southamerica2018));
-    let PcomparisonSouthamerica: number = (((southamerica2018 / southamerica2008) - 1) * 100);
-    let compSouthamerica: number = (southamerica2018 - southamerica2008);
+    const totalSouthamerica: number = (100 / (gesamt / southamerica2018));
+    const PcomparisonSouthamerica: number = (((southamerica2018 / southamerica2008) - 1) * 100);
+    const compSouthamerica: number = (southamerica2018 - southamerica2008);
 
     //Afrika
-    let totalAfrica: number = (100 / (gesamt / africa2018));
-    let PcomparisonAfrica: number = (((africa2018 / africa2008) - 1) * 100);
-    let compAfrica: number = (africa2018 - africa2008);
+    const totalAfrica: number = (100 / (gesamt / africa2018));
+    const PcomparisonAfrica: number = (((africa2018 / africa2008) - 1) * 100);
+    const compAfrica: number = (africa2018 - africa2008);
 
     //Asien
-    let totalAsia: number = (100 / (gesamt / asia2018));
-    let PcomparisonAsia: number = (((asia2018 / asia2008) - 1) * 100);
-    let compAsia: number = (asia2018 - asia2008);
+    const totalAsia: number = (100 / (gesamt / asia2018));
+    const PcomparisonAsia: number = (((asia2018 / asia2008) - 1) * 100);
+    const compAsia: number = (asia2018 - asia2008);
 
     //Australien
-    let totalAustralia: number = (100 / (gesamt / australia2018));
-    let PcomparisonAustralia: number = (((australia2018 / australia2008) - 1) * 100);
-    let compAustralia: number = (australia2018 - australia2008);
+    const totalAustralia: number = (100 / (gesamt / australia2018));
+    const PcomparisonAustralia: number = (((australia2018 / australia2008) - 1) * 100);
+    const compAustralia: number = (australia2018 - australia2008);
 
     //HTML DOM Manipulation 
     //Europa
