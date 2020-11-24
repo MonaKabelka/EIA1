@@ -49,7 +49,8 @@ var Aufgabe06;
     //HTML DOM Manipulation 
     //Europa
     function europe() {
-        document.querySelector(".titleRegion").innerHTML = "Europe"; //Greift nicht auf alle class="titleRegion" Elemente zu: Was stimmt nicht?
+        document.querySelector(".titleRegion").innerHTML = "Europe"; //Greift nicht auf alle class="titleRegion" Elemente zu: wieso?
+        document.querySelector(".titleRegion1").innerHTML = "Europe";
         document.querySelector(".absoluteEmission").innerHTML = europe2018 + "kg CO2"; //Wenn kg CO2 weg ist, ist da ein Fehler, wieso?
         document.querySelector(".relativeEmission").innerHTML = totalEurope.toFixed(1) + "%";
         document.querySelector(".growthEmission").innerHTML = PcomparisonEurope.toFixed(1) + "%";
@@ -62,6 +63,7 @@ var Aufgabe06;
     //Nordamerika
     function northamerica() {
         document.querySelector(".titleRegion").innerHTML = "North America";
+        document.querySelector(".titleRegion1").innerHTML = "North America";
         document.querySelector(".absoluteEmission").innerHTML = northamerica2008 + "kg CO2";
         document.querySelector(".relativeEmission").innerHTML = totalNorthamerica.toFixed(1) + "%";
         document.querySelector(".growthEmission").innerHTML = PcomparisonNorthamerica.toFixed(1) + "%";
@@ -74,6 +76,7 @@ var Aufgabe06;
     //Südamerika
     function southamerica() {
         document.querySelector(".titleRegion").innerHTML = "South America";
+        document.querySelector(".titleRegion1").innerHTML = "South America";
         document.querySelector(".absoluteEmission").innerHTML = southamerica2018 + "kg CO2";
         document.querySelector(".relativeEmission").innerHTML = totalSouthamerica.toFixed(1) + "%";
         document.querySelector(".growthEmission").innerHTML = PcomparisonSouthamerica.toFixed(1) + "%";
@@ -86,6 +89,7 @@ var Aufgabe06;
     //Afrika
     function africa() {
         document.querySelector(".titleRegion").innerHTML = "Africa";
+        document.querySelector(".titleRegion1").innerHTML = "Africa";
         document.querySelector(".absoluteEmission").innerHTML = africa2018 + "kg CO2";
         document.querySelector(".relativeEmission").innerHTML = totalAfrica.toFixed(1) + "%";
         document.querySelector(".growthEmission").innerHTML = PcomparisonAfrica.toFixed(1) + "%";
@@ -98,6 +102,7 @@ var Aufgabe06;
     //Asien
     function asia() {
         document.querySelector(".titleRegion").innerHTML = "Asia";
+        document.querySelector(".titleRegion1").innerHTML = "Asia";
         document.querySelector(".absoluteEmission").innerHTML = asia2018 + "kg CO2";
         document.querySelector(".relativeEmission").innerHTML = totalAsia.toFixed(1) + "%";
         document.querySelector(".growthEmission").innerHTML = PcomparisonAfrica.toFixed(1) + "%";
@@ -110,6 +115,7 @@ var Aufgabe06;
     //Australien
     function australia() {
         document.querySelector(".titleRegion").innerHTML = "Australia";
+        document.querySelector(".titleRegion1").innerHTML = "Australia";
         document.querySelector(".absoluteEmission").innerHTML = australia2018 + "kg CO2";
         document.querySelector(".relativeEmission").innerHTML = totalAustralia.toFixed(1) + "%";
         document.querySelector(".growthEmission").innerHTML = PcomparisonAustralia.toFixed(1) + "%";
