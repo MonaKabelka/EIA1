@@ -62,7 +62,7 @@ namespace Aufgabe06 {
     //HTML DOM Manipulation 
     //Europa
     function europe() {
-        document.querySelector(".titleRegion").innerHTML = "Europe"; //Greift nicht auf alle class="titleRegion" Elemente zu: wieso?
+        document.querySelector(".titleRegion").innerHTML = "Europe";
         document.querySelector(".titleRegion1").innerHTML = "Europe";
         document.querySelector(".absoluteEmission").innerHTML = europe2018 + "kg CO2"; //Wenn kg CO2 weg ist, ist da ein Fehler, wieso?
         document.querySelector(".relativeEmission").innerHTML = totalEurope.toFixed(1) + "%";
