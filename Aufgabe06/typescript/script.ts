@@ -1,29 +1,22 @@
 namespace Aufgabe06 {
-    //Emissionswerte zuweisen
     //Europa
     const europe2008: number = 4965.7;
     const europe2018: number = 4209.3;
-
     //Nordamerika
     const northamerica2008: number = 6600.4;
     const northamerica2018: number = 6036.6;
-
     //Südamerika
     const southamerica2008: number = 1132.6;
     const southamerica2018: number = 1261.5;
-
     //Afrika
     const africa2008: number = 1028;
     const africa2018: number = 1235.5;
-
     //Asien
     const asia2008: number = 12954.7;
     const asia2018: number = 16274.1;
-
     //Australien
     const australia2008: number = 1993;
     const australia2018: number = 2100.5;
-
     //Gesamtemission
     const gesamt: number = europe2018 + northamerica2018 + southamerica2018 + africa2018 + asia2018 + australia2018;
 
@@ -58,5 +51,4 @@ namespace Aufgabe06 {
     document.querySelector("#australia").addEventListener("click", function () {
         ChangeValue("Australia", australia2018, australia2008);
     })
-
 }

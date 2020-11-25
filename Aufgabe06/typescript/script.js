@@ -1,6 +1,5 @@
 var Aufgabe06;
 (function (Aufgabe06) {
-    //Emissionswerte zuweisen
     //Europa
     var europe2008 = 4965.7;
     var europe2018 = 4209.3;
