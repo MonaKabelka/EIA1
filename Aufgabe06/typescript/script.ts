@@ -29,26 +29,26 @@ namespace Aufgabe06 {
         document.querySelector("#growthEmission").innerHTML = (((newValue / oldValue) - 1) * 100).toFixed(1) + "%";
         document.querySelector("#growthEmissionAbs").innerHTML = (newValue - oldValue).toFixed(1) + "kg CO2";
 
-        document.querySelector(".chart").setAttribute("style", "height:" + (100 / (gesamt / newValue)) + "%")
+        document.querySelector(".chart").setAttribute("style", "height:" + (100 / (gesamt / newValue)) + "%");
     };
 
     //EventListener
     document.querySelector("#europe").addEventListener("click", function () {
         ChangeValue("Europe", europe2018, europe2008);
-    })
+    });
     document.querySelector("#northamerica").addEventListener("click", function () {
         ChangeValue("North America", northamerica2018, northamerica2008);
-    })
+    });
     document.querySelector("#southamerica").addEventListener("click", function () {
         ChangeValue("South America", southamerica2018, southamerica2008);
-    })
+    });
     document.querySelector("#africa").addEventListener("click", function () {
         ChangeValue("Africa", africa2018, africa2008);
-    })
+    });
     document.querySelector("#asia").addEventListener("click", function () {
         ChangeValue("Asia", asia2018, asia2008);
-    })
+    });
     document.querySelector("#australia").addEventListener("click", function () {
         ChangeValue("Australia", australia2018, australia2008);
-    })
+    });
 }
