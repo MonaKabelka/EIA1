@@ -18,6 +18,9 @@ var Aufgabe06;
     //Australien
     var australia2008 = 1993;
     var australia2018 = 2100.5;
+    //Welt
+    var world2008 = (europe2008 + northamerica2008 + southamerica2008 + africa2008 + asia2008 + australia2008);
+    var world2018 = (europe2018 + northamerica2018 + southamerica2018 + africa2018 + asia2018 + australia2018);
     //Gesamtemission
     var gesamt = europe2018 + northamerica2018 + southamerica2018 + africa2018 + asia2018 + australia2018;
     //Funktion 
@@ -32,6 +35,9 @@ var Aufgabe06;
     }
     ;
     //EventListener
+    document.querySelector("#world").addEventListener("click", function () {
+        ChangeValue("the World", world2018, world2008);
+    });
     document.querySelector("#europe").addEventListener("click", function () {
         ChangeValue("Europe", europe2018, europe2008);
     });

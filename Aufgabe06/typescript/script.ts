@@ -17,6 +17,9 @@ namespace Aufgabe06 {
     //Australien
     const australia2008: number = 1993;
     const australia2018: number = 2100.5;
+    //Welt
+    const world2008: number = (europe2008 + northamerica2008 + southamerica2008 + africa2008 + asia2008 + australia2008);
+    const world2018: number = (europe2018 + northamerica2018 + southamerica2018 + africa2018 + asia2018 + australia2018);
     //Gesamtemission
     const gesamt: number = europe2018 + northamerica2018 + southamerica2018 + africa2018 + asia2018 + australia2018;
 
@@ -33,6 +36,9 @@ namespace Aufgabe06 {
     };
 
     //EventListener
+    document.querySelector("#world").addEventListener("click", function () {
+        ChangeValue("the World", world2018, world2008);
+    });
     document.querySelector("#europe").addEventListener("click", function () {
         ChangeValue("Europe", europe2018, europe2008);
     });

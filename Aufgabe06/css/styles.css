@@ -16,8 +16,13 @@ nav img {
     opacity: 50%;
 }
 
+#world {
+    margin: 0px 35px 20px 0px;
+}
+
 nav img:hover {
     opacity: 100%;
+    transition: 1s;
 }
 
 section {
@@ -41,6 +46,7 @@ section {
     height: 100%;
     background: rgb(0, 0, 0);
     transition: 1s;
+    border-radius: 4px;
 }
 
 footer p {
