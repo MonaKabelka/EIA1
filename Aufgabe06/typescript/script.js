@@ -24,11 +24,11 @@ var Aufgabe06;
     function ChangeValue(continent, newValue, oldValue) {
         document.querySelector("#titleRegion").innerHTML = continent;
         document.querySelector("#titleRegion1").innerHTML = continent;
-        document.querySelector("#absoluteEmission").innerHTML = newValue.toFixed(1) + "kg CO2";
+        document.querySelector("#absoluteEmission").innerHTML = newValue.toFixed(1) + "kg CO²";
         document.querySelector("#relativeEmission").innerHTML = (100 / (gesamt / newValue)).toFixed(1) + "%";
         document.querySelector("#growthEmission").innerHTML = (((newValue / oldValue) - 1) * 100).toFixed(1) + "%";
-        document.querySelector("#growthEmissionAbs").innerHTML = (newValue - oldValue).toFixed(1) + "kg CO2";
-        document.querySelector(".chart").setAttribute("style", "height:" + (100 / (gesamt / newValue)) + "%");
+        document.querySelector("#growthEmissionAbs").innerHTML = (newValue - oldValue).toFixed(1) + "kg CO²";
+        document.querySelector(".chart").setAttribute("style", "width:" + (100 / (gesamt / newValue)) + "%");
     }
     ;
     //EventListener
