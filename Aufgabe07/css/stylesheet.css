@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    background-image: url(bg2.jpg);
+}
+
+#container {
+    position: relative;
+    width: 480px;
+    height: 480px;
+}
+
+#container div{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: inline-block;
+    z-index: 1;
+    margin: 3px;
+}
+
+#container img {
+    position: relative;
+    left: 160px;
+}
+
+#pad1, #pad2, #pad3 {
+    background-color: #b0beb6;
+}
+
+#pad4, #pad5, #pad6, #pad7 {
+    background-color: #889775;
+}
+
+
+#pad8, #pad9 {
+    background-color: #977666;
+}
