@@ -16,7 +16,7 @@ function playSample(n) {
 ;
 //Eventlistener
 document.querySelector("#pad1").addEventListener("click", function () {
-    playSample(0); //Wie bei click resonanz des divs einstellen? Css? 
+    playSample(0);
 });
 document.querySelector("#pad2").addEventListener("click", function () {
     playSample(1);

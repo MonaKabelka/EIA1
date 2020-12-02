@@ -12,12 +12,12 @@ sound[8] = new Audio("assets/laugh-2.mp3");
 
 //Funktion Abspielen der Sounds
 function playSample(n: number): void {
-    sound[n].play();
+    sound[n].play(); 
 };
 
 //Eventlistener
 document.querySelector("#pad1").addEventListener("click", function () {
-    playSample(0);//Wie bei click resonanz des divs einstellen? Css? 
+    playSample(0);
 });
 document.querySelector("#pad2").addEventListener("click", function () {
     playSample(1);
