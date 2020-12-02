@@ -1,5 +1,5 @@
 //Sounds Array
-const sound: HTMLAudioElement[] = []; 
+const sound: HTMLAudioElement[] = [];
 sound[0] = new Audio("assets/kick.mp3");
 sound[1] = new Audio("assets/hihat.mp3");
 sound[2] = new Audio("assets/snare.mp3");
@@ -12,7 +12,7 @@ sound[8] = new Audio("assets/laugh-2.mp3");
 
 //Funktion Abspielen der Sounds
 function playSample(n: number): void {
-    sound[n].play(); 
+    sound[n].play();
 };
 
 //Eventlistener
@@ -53,6 +53,6 @@ function beat(): void {
     setInterval(function () {
         playSample(0);
         playSample(1);
-        playSample(2);
-    }, 500);
+        playSample(2); 
+    }, 1000);
 };

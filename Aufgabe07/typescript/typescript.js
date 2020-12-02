@@ -51,7 +51,7 @@ function beat() {
         playSample(0);
         playSample(1);
         playSample(2);
-    }, 500);
+    }, 1000);
 }
 ;
 //# sourceMappingURL=typescript.js.map

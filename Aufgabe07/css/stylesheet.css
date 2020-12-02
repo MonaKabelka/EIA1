@@ -24,9 +24,17 @@ html {
     margin: 3px;
 }
 
+#container div:hover{
+    opacity: 70%;
+}
+
 #container img {
     position: relative;
     left: 160px;
+}
+
+#container img:hover {
+    opacity: 70%;
 }
 
 #pad1, #pad2, #pad3 {
