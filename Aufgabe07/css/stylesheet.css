@@ -31,13 +31,16 @@ html {
 
 #pad1, #pad2, #pad3 {
     background-color: #b0beb6;
+    cursor: pointer
 }
 
 #pad4, #pad5, #pad6, #pad7 {
     background-color: #889775;
+    cursor: pointer
 }
 
 
 #pad8, #pad9 {
     background-color: #977666;
+    cursor: pointer
 }

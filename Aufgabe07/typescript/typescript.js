@@ -1,43 +1,44 @@
-//Sounds zuweisen
-var sound = []; //Kann man hier auch const nutzen?
-sound[0] = new Audio(".assets/kick.mp3");
-sound[1] = new Audio(".assets/hihat.mp3");
-sound[2] = new Audio(".assets/snare.mp3");
-sound[3] = new Audio(".assets/A.mp3");
-sound[4] = new Audio(".assets/C.mp3");
-sound[5] = new Audio(".assets/F.mp3");
-sound[6] = new Audio(".assets/G.mp3");
-sound[7] = new Audio(".assets/laugh-1.mp3");
-sound[8] = new Audio(".assets/laugh-2.mp3");
+//Sounds Array
+var sound = []; //Kann man hier auch const nutzen? //Muss man htmlaudioelement schreiben?
+sound[0] = new Audio("assets/kick.mp3");
+sound[1] = new Audio("assets/hihat.mp3");
+sound[2] = new Audio("assets/snare.mp3");
+sound[3] = new Audio("assets/A.mp3");
+sound[4] = new Audio("assets/C.mp3");
+sound[5] = new Audio("assets/F.mp3");
+sound[6] = new Audio("assets/G.mp3");
+sound[7] = new Audio("assets/laugh-1.mp3");
+sound[8] = new Audio("assets/laugh-2.mp3");
+//Funktion Abspielen der Sounds
+function playSample(n) {
+    sound[n].play();
+}
 //Eventlistener
 document.querySelector("#pad1").addEventListener("click", function () {
-    playSample();
+    playSample(0);
 });
 document.querySelector("#pad2").addEventListener("click", function () {
-    playSample();
+    playSample(1);
 });
 document.querySelector("#pad3").addEventListener("click", function () {
-    playSample();
+    playSample(2);
 });
 document.querySelector("#pad4").addEventListener("click", function () {
-    playSample();
+    playSample(3);
 });
 document.querySelector("#pad5").addEventListener("click", function () {
-    playSample();
+    playSample(4);
 });
 document.querySelector("#pad6").addEventListener("click", function () {
-    playSample();
+    playSample(5);
 });
 document.querySelector("#pad7").addEventListener("click", function () {
-    playSample();
+    playSample(6);
 });
 document.querySelector("#pad8").addEventListener("click", function () {
-    playSample();
+    playSample(7);
 });
 document.querySelector("#pad9").addEventListener("click", function () {
-    playSample();
+    playSample(8);
 });
-//Abspiel Funktion
-function playSample() {
-}
 //# sourceMappingURL=typescript.js.map
