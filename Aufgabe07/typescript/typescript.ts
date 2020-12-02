@@ -54,5 +54,5 @@ function beat(): void {
         playSample(0);
         playSample(1);
         playSample(2); 
-    }, 1000);
+    }, 250);
 };
