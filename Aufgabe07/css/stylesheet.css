@@ -44,3 +44,7 @@ html {
     background-color: #977666;
     cursor: pointer
 }
+
+#playbutton {
+    cursor: pointer;
+}

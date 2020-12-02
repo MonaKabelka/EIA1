@@ -1,5 +1,5 @@
 //Sounds Array
-var sound = []; //Kann man hier auch const nutzen? //Muss man htmlaudioelement schreiben?
+var sound = [];
 sound[0] = new Audio("assets/kick.mp3");
 sound[1] = new Audio("assets/hihat.mp3");
 sound[2] = new Audio("assets/snare.mp3");
@@ -13,9 +13,10 @@ sound[8] = new Audio("assets/laugh-2.mp3");
 function playSample(n) {
     sound[n].play();
 }
+;
 //Eventlistener
 document.querySelector("#pad1").addEventListener("click", function () {
-    playSample(0);
+    playSample(0); //Wie bei click resonanz des divs einstellen? Css? 
 });
 document.querySelector("#pad2").addEventListener("click", function () {
     playSample(1);
@@ -41,4 +42,16 @@ document.querySelector("#pad8").addEventListener("click", function () {
 document.querySelector("#pad9").addEventListener("click", function () {
     playSample(8);
 });
+//7.2
+document.querySelector("#playbutton").addEventListener("click", function () {
+    beat();
+});
+function beat() {
+    setInterval(function () {
+        playSample(0);
+        playSample(1);
+        playSample(2);
+    }, 500);
+}
+;
 //# sourceMappingURL=typescript.js.map
