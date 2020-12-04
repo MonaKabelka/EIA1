@@ -1,14 +1,15 @@
 //Sounds Array
-var sound = [];
-sound[0] = new Audio("assets/kick.mp3");
-sound[1] = new Audio("assets/hihat.mp3");
-sound[2] = new Audio("assets/snare.mp3");
-sound[3] = new Audio("assets/A.mp3");
-sound[4] = new Audio("assets/C.mp3");
-sound[5] = new Audio("assets/F.mp3");
-sound[6] = new Audio("assets/G.mp3");
-sound[7] = new Audio("assets/laugh-1.mp3");
-sound[8] = new Audio("assets/laugh-2.mp3");
+var sound = [
+    new Audio("assets/kick.mp3"),
+    new Audio("assets/hihat.mp3"),
+    new Audio("assets/snare.mp3"),
+    new Audio("assets/A.mp3"),
+    new Audio("assets/C.mp3"),
+    new Audio("assets/F.mp3"),
+    new Audio("assets/G.mp3"),
+    new Audio("assets/laugh-1.mp3"),
+    new Audio("assets/laugh-2.mp3"),
+];
 //Funktion Abspielen der Sounds
 function playSample(n) {
     sound[n].play();
@@ -48,10 +49,16 @@ document.querySelector("#playbutton").addEventListener("click", function () {
 });
 function beat() {
     setInterval(function () {
-        playSample(0);
-        playSample(1);
-        playSample(2);
-    }, 250);
+        setTimeout(function () {
+            playSample(0);
+        }, 200);
+        setTimeout(function () {
+            playSample(1);
+        }, 200);
+        setTimeout(function () {
+            playSample(2);
+        }, 200);
+    }, 300);
 }
 ;
 //# sourceMappingURL=typescript.js.map
