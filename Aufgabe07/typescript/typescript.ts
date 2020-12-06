@@ -49,6 +49,7 @@ document.querySelector("#playbutton").addEventListener("click", function () {
     beat();
 });
 
+
 function beat(): void {
     setInterval(function () {
         setTimeout(() => {
