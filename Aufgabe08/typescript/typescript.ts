@@ -86,7 +86,7 @@ namespace Aufgabe08 {
     });
 
     function recordBeat(x: number): void {
-        if (recording == true) {
+        if (recording == true) { // kann man hier nicht auch boolean weglassen? stattdessen if (recordbtn.classList.contains("active"))
             dynArray.push(x);
             console.log(dynArray.length);
         } else {
@@ -101,7 +101,7 @@ namespace Aufgabe08 {
         dynArray = [];
     });
 
-
+    // Loop 
     function beat(): void {
         setInterval(function (): void {
             setTimeout(() => {
