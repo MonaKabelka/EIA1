@@ -61,11 +61,36 @@ var Aufgabe08;
     playbtn.addEventListener("click", function () {
         beat();
     });
-    //Lösch-Button
-    // const trashbtn: HTMLElement = document.querySelector("#trash");
-    // trashbtn.addEventListener("click", function (): void {
-    //     .length = 0;
-    // })
+    //Record-Button
+    var recordbtn = document.querySelector("#record");
+    var dynArray = [];
+    var recording;
+    recordbtn.addEventListener("click", function () {
+        if (recordbtn.classList.contains("active")) {
+            recordbtn.classList.remove("active");
+            console.log("inaktiv");
+            recording = false;
+        }
+        else {
+            recordbtn.classList.add("active");
+            recording = true;
+            console.log("aktiv");
+        }
+    });
+    function recordBeat(x) {
+        if (recording == true) {
+            dynArray.push(x);
+            console.log(dynArray.length);
+        }
+        else {
+            console.log("Stop");
+        }
+    }
+    // Lösch-Button
+    var trashbtn = document.querySelector("#trash");
+    trashbtn.addEventListener("click", function () {
+        dynArray = [];
+    });
     function beat() {
         setInterval(function () {
             setTimeout(function () {

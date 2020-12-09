@@ -27,10 +27,11 @@ html {
     opacity: 60%;
 }
 
-#play, #stop, #trash, #record{
+#play, #stop, #trash, #record {
     color: #fff;
     font-size: 80px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 #play {
@@ -58,21 +59,34 @@ html {
 }
 
 #pad1, #pad2, #pad3 {
-    background-color: #b0beb6;
+    background-color:  #82a090;
     cursor: pointer
 }
 
 #pad4, #pad5, #pad6, #pad7 {
-    background-color: #889775;
+    background-color:  #667e71;
     cursor: pointer
 }
 
-
 #pad8, #pad9 {
-    background-color: #977666;
+    background-color: #619678;
     cursor: pointer
 }
 
 .hidden {
     display: none !important;
 }
+
+.active {
+    color: #a34c4c !important;
+    font-size: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* .inactive {
+    color: #fff;
+    font-size: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+} */
