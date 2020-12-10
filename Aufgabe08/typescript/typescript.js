@@ -13,58 +13,74 @@ var Aufgabe08;
         new Audio("assets/laugh-2.mp3")
     ];
     //Funktion Abspielen der Sounds
-    function playSample(n) {
-        sound[n].play();
+    function playSample(i) {
+        sound[i].play();
     }
     //Eventlistener Pads
     document.querySelector("#pad1").addEventListener("click", function () {
         playSample(0);
+        recordBeat(0);
     });
     document.querySelector("#pad2").addEventListener("click", function () {
         playSample(1);
+        recordBeat(1);
     });
     document.querySelector("#pad3").addEventListener("click", function () {
         playSample(2);
+        recordBeat(2);
     });
     document.querySelector("#pad4").addEventListener("click", function () {
         playSample(3);
+        recordBeat(3);
     });
     document.querySelector("#pad5").addEventListener("click", function () {
         playSample(4);
+        recordBeat(4);
     });
     document.querySelector("#pad6").addEventListener("click", function () {
         playSample(5);
+        recordBeat(5);
     });
     document.querySelector("#pad7").addEventListener("click", function () {
         playSample(6);
+        recordBeat(6);
     });
     document.querySelector("#pad8").addEventListener("click", function () {
         playSample(7);
+        recordBeat(7);
     });
     document.querySelector("#pad9").addEventListener("click", function () {
         playSample(8);
+        recordBeat(8);
     });
-    //Play- und Stop-Button
+    //Play- und Stop-Button______________________________________________________________________________________________________________
     var playbtn = document.querySelector("#play");
     var stopbtn = document.querySelector("#stop");
+    //Class toggle
     function toggle(firstbtn, secondbtn) {
         firstbtn.classList.add("hidden");
         secondbtn.classList.remove("hidden");
     }
     playbtn.addEventListener("click", function () {
         toggle(playbtn, stopbtn);
+        loop(true);
     });
     stopbtn.addEventListener("click", function () {
         toggle(stopbtn, playbtn);
+        loop(false);
     });
-    //Beat als Loop
-    playbtn.addEventListener("click", function () {
-        beat();
-    });
-    //Record-Button
+    //Record-Button_______________________________________________________________________________________________________________________
     var recordbtn = document.querySelector("#record");
-    var dynArray = [];
+    var dynArray = [0, 1, 2]; //Werden mit Trash Button auch gelöscht!
     var recording;
+    var i;
+    function recordBeat(i) {
+        console.log("Mikrofon nimmt auf");
+        if (recording == true) {
+            dynArray.push(i);
+        }
+    }
+    //Eventlistener Record-Button
     recordbtn.addEventListener("click", function () {
         if (recordbtn.classList.contains("active")) {
             recordbtn.classList.remove("active");
@@ -77,33 +93,29 @@ var Aufgabe08;
             console.log("aktiv");
         }
     });
-    function recordBeat(x) {
-        if (recording == true) { // kann man hier nicht auch boolean weglassen? stattdessen if (recordbtn.classList.contains("active"))
-            dynArray.push(x);
-            console.log(dynArray.length);
-        }
-        else {
-            console.log("Stop");
-        }
-    }
-    // Lösch-Button
+    // Lösch-Button______________________________________________________________________________________________________________________
     var trashbtn = document.querySelector("#trash");
     trashbtn.addEventListener("click", function () {
         dynArray = [];
+        console.log("gelöscht");
     });
-    // Loop 
-    function beat() {
-        setInterval(function () {
-            setTimeout(function () {
-                playSample(0);
-            }, 200);
-            setTimeout(function () {
-                playSample(1);
-            }, 800);
-            setTimeout(function () {
-                playSample(2);
-            }, 800);
-        }, 300);
+    //Funktion Play- und Pause-Button____________________________________________________________________________________________________
+    var interval;
+    var x = 0;
+    function loop(b) {
+        if (b == true) {
+            interval = setInterval(function () {
+                playSample(dynArray[x]);
+                x++;
+                console.log(x);
+                if (x >= dynArray.length) {
+                    x = 0;
+                }
+            }, 500);
+        }
+        else {
+            clearInterval(interval);
+        }
     }
 })(Aufgabe08 || (Aufgabe08 = {}));
 //# sourceMappingURL=typescript.js.map
