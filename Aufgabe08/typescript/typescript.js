@@ -13,8 +13,8 @@ var Aufgabe08;
         new Audio("assets/laugh-2.mp3")
     ];
     //Funktion Abspielen der Sounds
-    function playSample(i) {
-        sound[i].play();
+    function playSample(soundIndex) {
+        sound[soundIndex].play();
     }
     //Eventlistener Pads
     document.querySelector("#pad1").addEventListener("click", function () {
@@ -71,13 +71,13 @@ var Aufgabe08;
     });
     //Record-Button_______________________________________________________________________________________________________________________
     var recordbtn = document.querySelector("#record");
-    var dynArray = [0, 1, 2]; //Werden mit Trash Button auch gelöscht!
+    var dynArray = [0, 1, 2];
     var recording;
-    var i;
-    function recordBeat(i) {
-        console.log("Mikrofon nimmt auf");
+    var dynArrayIndex;
+    function recordBeat(dynArrayIndex) {
+        console.log("Sound aufgenommen");
         if (recording == true) {
-            dynArray.push(i);
+            dynArray.push(dynArrayIndex);
         }
     }
     //Eventlistener Record-Button
@@ -101,15 +101,15 @@ var Aufgabe08;
     });
     //Funktion Play- und Pause-Button____________________________________________________________________________________________________
     var interval;
-    var x = 0;
-    function loop(b) {
-        if (b == true) {
+    var index = 0;
+    function loop(playpauseB) {
+        if (playpauseB == true) {
             interval = setInterval(function () {
-                playSample(dynArray[x]);
-                x++;
-                console.log(x);
-                if (x >= dynArray.length) {
-                    x = 0;
+                playSample(dynArray[index]);
+                index++;
+                console.log(index);
+                if (index >= dynArray.length) {
+                    index = 0;
                 }
             }, 500);
         }

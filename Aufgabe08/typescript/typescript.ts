@@ -12,8 +12,8 @@ namespace Aufgabe08 {
         new Audio("assets/laugh-2.mp3")];
 
     //Funktion Abspielen der Sounds
-    function playSample(i: number): void {
-        sound[i].play();
+    function playSample(soundIndex: number): void {
+        sound[soundIndex].play();
     }
 
     //Eventlistener Pads
@@ -77,15 +77,15 @@ namespace Aufgabe08 {
     //Record-Button_______________________________________________________________________________________________________________________
     const recordbtn: HTMLElement = document.querySelector("#record");
 
-    let dynArray: number[] = [0, 1, 2];  //Werden mit Trash Button auch gelöscht!
+    let dynArray: number[] = [0, 1, 2];
     let recording: boolean;
-    let i: number;
-   
-    function recordBeat(i: number): void {
-        console.log("Mikrofon nimmt auf");
+    let dynArrayIndex: number;
+
+    function recordBeat(dynArrayIndex: number): void {
+        console.log("Sound aufgenommen");
         if (recording == true) {
-            dynArray.push(i);
-        } 
+            dynArray.push(dynArrayIndex);
+        }
     }
 
     //Eventlistener Record-Button
@@ -111,21 +111,21 @@ namespace Aufgabe08 {
 
     //Funktion Play- und Pause-Button____________________________________________________________________________________________________
     let interval: number;
-    let x: number = 0;
+    let index: number = 0;
 
-    function loop (b: boolean): void {
-            if (b == true) {
-                interval = setInterval(function(): void {
-                   playSample(dynArray[x]);
-                   x++;
-                   console.log(x);
-                   if (x >= dynArray.length) {
-                    x = 0;
+    function loop(playpauseB: boolean): void {
+        if (playpauseB == true) {
+            interval = setInterval(function (): void {
+                playSample(dynArray[index]);
+                index++;
+                console.log(index);
+                if (index >= dynArray.length) {
+                    index = 0;
                 }
-                },                     500);
-            } else {
-                clearInterval(interval);
-            }
+            },                     500);
+        } else {
+            clearInterval(interval);
         }
+    }
 
 }
