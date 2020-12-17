@@ -14,9 +14,61 @@ h1 {
     font-size: 50px;
 }
 
-p, .fas{
+#counter {
     color: #fff;
     font-size: 30px;
 }
 
+.container {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    background: #000;
+    width: 250px;
+}
 
+.checkOff {
+    position: absolute;
+
+}
+
+.taskText {
+    position: absolute;
+    color: #fff;
+    left: 40px;
+}
+
+.fas {
+    position: relative;
+    left: 230px;
+    color: #fff;
+}
+
+#addBtn {
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+}
+
+#userInput {
+    position: relative;
+    left: 20px;
+}
+
+#counter {
+    position: relative;
+    left: 20px;
+}
+
+#deleteall {
+    font-size: 10px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    left: 60px;
+}
+
+.crossedout {
+    text-decoration: line-through;
+}

@@ -6,29 +6,43 @@ var Aufgabe09;
     inputField.addEventListener("keypress", function (event) {
         if (event.key == "Enter") {
             addTask();
-            inputField.value = "";
+            inputField.value = ""; //Value leeren
         }
     });
     addBtn.addEventListener("click", function () {
         addTask();
     });
     function addTask() {
-        console.log("funktioniert");
+        console.log("task added");
         var container = document.createElement("div");
         container.className = "container";
         var checkbox = document.createElement("input");
         checkbox.type = "checkbox";
+        checkbox.className = "checkOff";
         var label = document.createElement("label"); //Label ist der Text zur Checkbox => Eingabe soll als Label ausgegeben werden
         label.innerHTML = inputField.value; //Per InnerHTMl Value an Label übergeben
+        label.className = "taskText";
         var trash = document.createElement("i");
         trash.className = "fas fa-trash-alt";
-        document.getElementById("toDoList").appendChild(container); //wie kriege ich die elemente in das div?(zum löschen später?)
-        container.appendChild(checkbox);
+        document.getElementById("toDoList").appendChild(container);
+        container.appendChild(checkbox); //Elemente an div übergeben
         container.appendChild(label);
         container.appendChild(trash);
         trash.addEventListener("click", function () {
-            console.log("löschen button geht");
+            console.log("task deleted");
             removeTask(container);
+        });
+        checkbox.addEventListener("click", function () {
+            if (checkbox.classList.contains("done")) {
+                checkbox.classList.remove("done");
+                label.classList.remove("crossedout");
+                console.log("undone");
+            }
+            else {
+                checkbox.classList.add("done");
+                label.classList.add("crossedout");
+                console.log("done");
+            }
         });
         amount++;
         count();
@@ -41,56 +55,12 @@ var Aufgabe09;
     function count() {
         document.getElementById("counter").innerText = amount + " open tasks";
     }
-    //label.remove() => Löschen
-    //_____________________________________________________________________________________________________________________________________
-    // const list: HTMLElement = document.getElementById("dynamicList");
-    // const taskInput: HTMLElement = document.getElementById("taskInput");
-    // const addBtn: HTMLElement = document.getElementById("addBtn");
-    // let amount: number = 0;
-    // function addTask(): void {
-    //     const li: HTMLElement = document.createElement("li");
-    //     list.appendChild(li); //Nur Listenelement wird kreiert ohne Text?
-    //     amount++;
-    //     count ();
-    // }
-    // function deleteTask(): void {
-    //     list.removeChild(); //Wie entfent man das Objekt?
-    //     amount--;
-    //     count();
-    // }
-    // function count (): void {
-    //     document.getElementById("counter").innerText = amount + " open tasks";
-    // }
-    // addBtn.addEventListener("click", function(): void {
-    //     addTask();
-    // });
-    // // .addEventListener("click", function(): void {
-    // // });
-    //     // ToDo App - Grundgerüst
-    //     const list: HTMLElement = document.getElementById("dynamicList");
-    //     const taskInput: HTMLElement = document.getElementById("taskInput");
-    //     const addBtn: HTMLElement = document.getElementById("addBtn");
-    //     let amount: number = 0;
-    //     let test: number = 0;
-    //     interface todo {
-    //         title: string;
-    //         done: boolean;
-    //     }
-    //     let todos: todo[] = [
-    //     {
-    //         title: "Geschenke kaufen",
-    //         done: true
-    //     }, 
-    //     {
-    //         title: "Glühwein warm machen",
-    //         done: true
-    //     }, 
-    //     {
-    //         title: "Mit Putin sprechen",
-    //         done: false
-    //     }
-    //     ];
-    //     for (let i: number = 0; i < todos.length; i++) {
-    //     list.innerHTML += "<li>" + todos[i].title + " [ " + todos[i].done + " ] </li>";
+    function deleteAllTasks() {
+        var list = document.getElementById("toDoList");
+        list.remove();
+    }
+    document.getElementById("deleteall").addEventListener("click", function () {
+        deleteAllTasks();
+    });
 })(Aufgabe09 || (Aufgabe09 = {}));
 //# sourceMappingURL=script09.js.map
