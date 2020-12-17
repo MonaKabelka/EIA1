@@ -3,12 +3,12 @@ namespace Aufgabe09 {
 
 const inputField: HTMLInputElement = (document.getElementById("userInput") as HTMLInputElement);
 const addBtn: HTMLElement = document.getElementById("addBtn");
-const deleteBtn: HTMLElement = document.querySelector(".fas"); //klicken funktioniert nicht
 let amount: number = 0;
 
 inputField.addEventListener("keypress", function (event: KeyboardEvent): void { 
     if (event.key == "Enter")  {
         addTask();
+        inputField.value = "";
     }
 });
 
@@ -16,20 +16,11 @@ addBtn.addEventListener("click", function (): void {
     addTask();
 });
 
-deleteBtn.addEventListener("click", function (): void {
-    console.log("ok");
-    removeTask(); 
-});
-
-document.getElementById("testbtn").addEventListener("click", function (): void {
-    console.log("ok");
-    removeTask();
-});
-
 function addTask(): void { //Task hinzufügen
     console.log("funktioniert");
 
     let container: HTMLDivElement = document.createElement("div");
+    container.className = "container";
 
     let checkbox: HTMLInputElement = document.createElement("input");
     checkbox.type = "checkbox";
@@ -41,18 +32,21 @@ function addTask(): void { //Task hinzufügen
     trash.className = "fas fa-trash-alt";
 
     document.getElementById("toDoList").appendChild(container); //wie kriege ich die elemente in das div?(zum löschen später?)
-    document.getElementById("toDoList").appendChild(checkbox);
-    document.getElementById("toDoList").appendChild(label);
-    document.getElementById("toDoList").appendChild(trash);
+    container.appendChild(checkbox);
+    container.appendChild(label);
+    container.appendChild(trash);
+
+    trash.addEventListener("click", function(): void {
+        console.log("löschen button geht");
+        removeTask( container);
+    });
 
     amount++;
     count ();
 }
 
-function removeTask(): void {
-    let object: HTMLElement = document.querySelector(".remove");
-    object.remove();
-    console.log("wird angewendet");
+function removeTask(container: HTMLDivElement): void { //Ich brauche den trash und den container
+    container.remove();
 
     amount--;
     count ();

@@ -2,27 +2,20 @@ var Aufgabe09;
 (function (Aufgabe09) {
     var inputField = document.getElementById("userInput");
     var addBtn = document.getElementById("addBtn");
-    var deleteBtn = document.querySelector(".fas"); //klicken funktioniert nicht
     var amount = 0;
     inputField.addEventListener("keypress", function (event) {
         if (event.key == "Enter") {
             addTask();
+            inputField.value = "";
         }
     });
     addBtn.addEventListener("click", function () {
         addTask();
     });
-    deleteBtn.addEventListener("click", function () {
-        console.log("ok");
-        removeTask();
-    });
-    document.getElementById("testbtn").addEventListener("click", function () {
-        console.log("ok");
-        removeTask();
-    });
     function addTask() {
         console.log("funktioniert");
         var container = document.createElement("div");
+        container.className = "container";
         var checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         var label = document.createElement("label"); //Label ist der Text zur Checkbox => Eingabe soll als Label ausgegeben werden
@@ -30,16 +23,18 @@ var Aufgabe09;
         var trash = document.createElement("i");
         trash.className = "fas fa-trash-alt";
         document.getElementById("toDoList").appendChild(container); //wie kriege ich die elemente in das div?(zum löschen später?)
-        document.getElementById("toDoList").appendChild(checkbox);
-        document.getElementById("toDoList").appendChild(label);
-        document.getElementById("toDoList").appendChild(trash);
+        container.appendChild(checkbox);
+        container.appendChild(label);
+        container.appendChild(trash);
+        trash.addEventListener("click", function () {
+            console.log("löschen button geht");
+            removeTask(container);
+        });
         amount++;
         count();
     }
-    function removeTask() {
-        var object = document.querySelector(".remove");
-        object.remove();
-        console.log("wird angewendet");
+    function removeTask(container) {
+        container.remove();
         amount--;
         count();
     }
