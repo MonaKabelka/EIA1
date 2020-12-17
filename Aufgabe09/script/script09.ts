@@ -18,21 +18,29 @@ addBtn.addEventListener("click", function (): void {
 
 deleteBtn.addEventListener("click", function (): void {
     console.log("ok");
+    removeTask(); 
 });
 
+document.getElementById("testbtn").addEventListener("click", function (): void {
+    console.log("ok");
+    removeTask();
+});
 
 function addTask(): void { //Task hinzufügen
     console.log("funktioniert");
+
+    let container: HTMLDivElement = document.createElement("div");
+
     let checkbox: HTMLInputElement = document.createElement("input");
     checkbox.type = "checkbox";
 
     let label: HTMLLabelElement = document.createElement("label"); //Label ist der Text zur Checkbox => Eingabe soll als Label ausgegeben werden
     label.innerHTML = inputField.value; //Per InnerHTMl Value an Label übergeben
 
-    let trash: HTMLElement = document.createElement("p");
-    trash.classList.add("fas");
-    trash.classList.add("fa-trash-alt"); //WIESO MUSS ICH HIER DIE KLASSEN TRENNEN?
+    let trash: HTMLElement = document.createElement("i"); 
+    trash.className = "fas fa-trash-alt";
 
+    document.getElementById("toDoList").appendChild(container); //wie kriege ich die elemente in das div?(zum löschen später?)
     document.getElementById("toDoList").appendChild(checkbox);
     document.getElementById("toDoList").appendChild(label);
     document.getElementById("toDoList").appendChild(trash);
@@ -42,8 +50,12 @@ function addTask(): void { //Task hinzufügen
 }
 
 function removeTask(): void {
-    // label.remove();
+    let object: HTMLElement = document.querySelector(".remove");
+    object.remove();
     console.log("wird angewendet");
+
+    amount--;
+    count ();
 }
 
 function count (): void {

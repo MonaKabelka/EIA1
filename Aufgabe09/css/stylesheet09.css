@@ -2,7 +2,10 @@ html, body {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: #a3bdb7;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #61706d;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -11,44 +14,9 @@ h1 {
     font-size: 50px;
 }
 
-p, .fas, li {
+p, .fas{
     color: #fff;
     font-size: 30px;
 }
 
-#dynamicList {
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
 
-#dynamicList li {
-    cursor: pointer;
-    /* position: absolute; */
-    padding: 12px 50px 12px 30px;
-    list-style-type: none;
-    background-color: #728580;
-    font-size: 18px;
-    transition: 0.5s;
-}
-
-#dynamicList li:hover {
-    background: #586b66;
-  }
-
-#dynamicList .done {
-    text-decoration: line-through;
-    background-color: #434d4a;
-}
-
-#delete {
-    position: relative;
-    left: 150px;
-    vertical-align: middle;
-}
-
-#check {
-    position: relative;
-    left: 0;
-    top: 0;
-}

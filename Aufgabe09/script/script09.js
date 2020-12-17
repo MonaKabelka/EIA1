@@ -14,16 +14,22 @@ var Aufgabe09;
     });
     deleteBtn.addEventListener("click", function () {
         console.log("ok");
+        removeTask();
+    });
+    document.getElementById("testbtn").addEventListener("click", function () {
+        console.log("ok");
+        removeTask();
     });
     function addTask() {
         console.log("funktioniert");
+        var container = document.createElement("div");
         var checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         var label = document.createElement("label"); //Label ist der Text zur Checkbox => Eingabe soll als Label ausgegeben werden
         label.innerHTML = inputField.value; //Per InnerHTMl Value an Label übergeben
-        var trash = document.createElement("p");
-        trash.classList.add("fas");
-        trash.classList.add("fa-trash-alt"); //WIESO MUSS ICH HIER DIE KLASSEN TRENNEN?
+        var trash = document.createElement("i");
+        trash.className = "fas fa-trash-alt";
+        document.getElementById("toDoList").appendChild(container); //wie kriege ich die elemente in das div?(zum löschen später?)
         document.getElementById("toDoList").appendChild(checkbox);
         document.getElementById("toDoList").appendChild(label);
         document.getElementById("toDoList").appendChild(trash);
@@ -31,8 +37,11 @@ var Aufgabe09;
         count();
     }
     function removeTask() {
-        // label.remove();
+        var object = document.querySelector(".remove");
+        object.remove();
         console.log("wird angewendet");
+        amount--;
+        count();
     }
     function count() {
         document.getElementById("counter").innerText = amount + " open tasks";
