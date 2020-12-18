@@ -13,6 +13,7 @@ namespace Aufgabe09 {
 
     addBtn.addEventListener("click", function (): void {
         addTask();
+        inputField.value = ""; //Value leeren
     });
 
     function addTask(): void { //Task hinzufügen
@@ -72,6 +73,8 @@ namespace Aufgabe09 {
     function deleteAllTasks(): void {
         const list: HTMLElement = document.getElementById("toDoList");
         list.remove();
+        amount = 0;
+        count();
     }
 
     document.getElementById("deleteall").addEventListener("click", function (): void {

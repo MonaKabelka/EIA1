@@ -11,6 +11,7 @@ var Aufgabe09;
     });
     addBtn.addEventListener("click", function () {
         addTask();
+        inputField.value = ""; //Value leeren
     });
     function addTask() {
         console.log("task added");
@@ -58,6 +59,8 @@ var Aufgabe09;
     function deleteAllTasks() {
         var list = document.getElementById("toDoList");
         list.remove();
+        amount = 0;
+        count();
     }
     document.getElementById("deleteall").addEventListener("click", function () {
         deleteAllTasks();
