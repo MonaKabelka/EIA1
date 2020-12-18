@@ -46,21 +46,21 @@ var Aufgabe09;
             }
         });
         amount++;
-        count();
+        updateAmount();
     }
     function removeTask(container) {
         container.remove();
         amount--;
-        count();
+        updateAmount();
     }
-    function count() {
+    function updateAmount() {
         document.getElementById("counter").innerText = amount + " open tasks";
     }
     function deleteAllTasks() {
-        var list = document.getElementById("toDoList");
-        list.remove();
+        var list = document.getElementById("toDoList"); //
+        list.innerHTML = "";
         amount = 0;
-        count();
+        updateAmount();
     }
     document.getElementById("deleteall").addEventListener("click", function () {
         deleteAllTasks();

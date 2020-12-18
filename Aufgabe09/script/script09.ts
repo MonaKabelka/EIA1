@@ -56,29 +56,28 @@ namespace Aufgabe09 {
         });
 
         amount++;
-        count();
+        updateAmount();
     }
 
     function removeTask(container: HTMLDivElement): void {
         container.remove();
 
         amount--;
-        count();
+        updateAmount();
     }
 
-    function count(): void {
+    function updateAmount(): void {
         document.getElementById("counter").innerText = amount + " open tasks";
     }
 
     function deleteAllTasks(): void {
-        const list: HTMLElement = document.getElementById("toDoList");
-        list.remove();
+        const list: HTMLElement = document.getElementById("toDoList"); //
+        list.innerHTML =  "";
         amount = 0;
-        count();
+        updateAmount();
     }
 
     document.getElementById("deleteall").addEventListener("click", function (): void {
         deleteAllTasks();
     });
-
 }
