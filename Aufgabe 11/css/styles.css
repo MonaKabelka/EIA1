@@ -22,7 +22,6 @@ main {
 .fa-microphone-alt-slash{
     position: absolute;
     left: 250px;
-    top: 5px;
     font-size: 30px;
     cursor: pointer;
 }
@@ -30,7 +29,6 @@ main {
 .fa-microphone-alt{
     position: absolute;
     left: 215px;
-    top: 5px;
     font-size: 30px;
     cursor: pointer;
 
