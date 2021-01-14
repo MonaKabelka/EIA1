@@ -54,7 +54,7 @@ var AUfgabe11;
             }
         });
         // Button Event-Listener (In HTML)
-        document.querySelector("#StartRecording").addEventListener("click", function () {
+        document.querySelector("#record").addEventListener("click", function () {
             artyom.say("Spracheingabe aktiviert");
             startContinuousArtyom();
             console.log("EventListener geht"); //Konsole gibt nichts aus!!!

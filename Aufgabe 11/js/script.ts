@@ -38,7 +38,6 @@ namespace AUfgabe11 {
     window.addEventListener("load", function (): void {
         const artyom: any = new Artyom();
 
-
         function startContinuousArtyom(): void {
             artyom.fatality();
 
@@ -67,18 +66,19 @@ namespace AUfgabe11 {
                     text: wildcard,
                     checked: false
                 });
+
                 drawListToDOM();
                 console.log("Neue Aufgabe wird erstellt: " + wildcard);
                 artyom.say("Deine Aufgabe" + wildcard + " wurde ergänzt");
             }
         });
         // Button Event-Listener (In HTML)
-        document.querySelector("#StartRecording").addEventListener("click", function (): void {
+        document.querySelector("#record").addEventListener("click", function (): void {
             artyom.say("Spracheingabe aktiviert");
             startContinuousArtyom();
             console.log("EventListener geht"); //Konsole gibt nichts aus!!!
         });
-    });
+        });
 
     window.addEventListener("load", function (): void {
 
