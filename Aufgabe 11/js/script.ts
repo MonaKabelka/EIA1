@@ -1,4 +1,4 @@
-namespace AUfgabe11 {
+namespace Aufgabe11 {
 
     // Interface für die Arrays
     interface TodoInterface {
@@ -74,9 +74,9 @@ namespace AUfgabe11 {
         });
         // Button Event-Listener (In HTML)
         document.querySelector("#record").addEventListener("click", function (): void {
+            console.log("EventListener geht"); //Konsole gibt nichts aus!!!
             artyom.say("Spracheingabe aktiviert");
             startContinuousArtyom();
-            console.log("EventListener geht"); //Konsole gibt nichts aus!!!
         });
         });
 

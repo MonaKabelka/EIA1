@@ -1,5 +1,5 @@
-var AUfgabe11;
-(function (AUfgabe11) {
+var Aufgabe11;
+(function (Aufgabe11) {
     // Variable: alle Objekte werden hier erstellt (Interface)
     var todosArray = [
         {
@@ -55,9 +55,9 @@ var AUfgabe11;
         });
         // Button Event-Listener (In HTML)
         document.querySelector("#record").addEventListener("click", function () {
+            console.log("EventListener geht"); //Konsole gibt nichts aus!!!
             artyom.say("Spracheingabe aktiviert");
             startContinuousArtyom();
-            console.log("EventListener geht"); //Konsole gibt nichts aus!!!
         });
     });
     window.addEventListener("load", function () {
@@ -210,5 +210,5 @@ var AUfgabe11;
          */
         drawListToDOM();
     }
-})(AUfgabe11 || (AUfgabe11 = {}));
+})(Aufgabe11 || (Aufgabe11 = {}));
 //# sourceMappingURL=script.js.map
