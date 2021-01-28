@@ -33,7 +33,6 @@ var Aufgabe06;
         document.querySelector("#growthEmissionAbs").innerHTML = (newValue - oldValue).toFixed(1) + "kg CO²";
         document.querySelector(".chart").setAttribute("style", "width:" + (100 / (gesamt / newValue)) + "%");
     }
-    ;
     //EventListener
     document.querySelector("#world").addEventListener("click", function () {
         ChangeValue("the World", world2018, world2008);

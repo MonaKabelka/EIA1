@@ -1,4 +1,5 @@
-namespace Aufgabe06 {
+namespace Aufgabe06 {    
+   
     //Europa
     const europe2008: number = 4965.7;
     const europe2018: number = 4209.3;
@@ -33,7 +34,7 @@ namespace Aufgabe06 {
         document.querySelector("#growthEmissionAbs").innerHTML = (newValue - oldValue).toFixed(1) + "kg CO²";
 
         document.querySelector(".chart").setAttribute("style", "width:" + (100 / (gesamt / newValue)) + "%");
-    };
+    }
 
     //EventListener
     document.querySelector("#world").addEventListener("click", function () {
