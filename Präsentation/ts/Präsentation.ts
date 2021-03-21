@@ -1,7 +1,8 @@
-let inputFieldName: HTMLFormElement; 
-let inputFieldEmail: HTMLFormElement; 
-let inputFieldPhone: HTMLFormElement; 
+let inputFieldName: HTMLInputElement; 
+let inputFieldEmail: HTMLInputElement; 
+let inputFieldPhone: HTMLInputElement; 
 let outputList: HTMLElement;
+
 window.addEventListener("load", function(): void { 
 document.querySelector("#addToContacts").addEventListener("click", function():
 void {
